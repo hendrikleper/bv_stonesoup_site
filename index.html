@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>STONE SOUP</title>
+	<meta charset="utf-8">
+	<meta name="author" content="boutiquevizique.com">
+	<meta name="description" content="een platform voor hedendaagse kunst en een middel tot publieke dialoog"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>    
+    <!-- the popup -->
+    <!--div id="boxes">
+        <div id="dialog" class="window">
+            <p><span class="" style="font-size:32px;line-height:40px;">Help</span><br> <span class="" style="font-size:40px;line-height:32px;"><strong>STONE SOUP</strong></span><br> aan een nieuwe lichtbak!</p> 
+            <p>&nbsp;</p>
+        <p>Steun ons via <a href="http://crowdfunding.gent/go/projects/stonesoup">Crowdfunding Gent</a></p>
+            <div id="popupclose"> 
+                <a href="#" class="close agree">X</a>
+            </div>
+        </div>
+    <div id="mask"></div>
+    </div-->
+    
+	<header>
+        
+		<div class="logo">
+            <h1><a href="index.html">STONE SOUP</a></h1>
+		</div><!-- end logo -->
+        
+        <div id="menu_icon"></div>
+        
+		<nav>
+		<ul>
+			<li><a href="info.html" target="_top">Info</a></li>
+			<li><a href="kunstenaars.html" target="_top">Kunstenaars</a></li>
+			<li><a href="evenementen.html" target="_top">Evenementen</a></li>
+			<li><a href="locatie.html" target="_top">Locatie</a></li>
+		</ul>
+		
+		</nav><!-- end navigation menu -->
+        
+		<div class="footer clearfix">
+            
+
+            
+            
+			<ul class="social clearfix">
+				<li><a href="http://facebook.com/boutiquevizique" class="fb"></a></li>
+			</ul><!-- end social -->
+		</div ><!-- end footer -->
+	</header><!-- end header -->
+
+	<section class="main clearfix">
+        
+		<div class="work">
+			<a href="inner10.html">
+				<img src="img/work10.jpg" class="media" alt=""/>
+				<div class="caption"><h5>#10</h5>
+					<div class="work_title">
+						<h2>One of Many, aiming for the other side</h2>
+					</div>
+				</div>
+			</a>
+		</div>
+		
+		<div class="work">
+			<a href="inner9.html">
+				<img src="img/work9.jpg" class="media" alt=""/>
+				<div class="caption"><h5>#09</h5>
+					<div class="work_title">
+						<h2>Dr. Rhodes Chiropractic</h2>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="work">
+			<a href="inner8.html">
+				<img src="img/work8.jpg" class="media" alt=""/>
+				<div class="caption"><h5>#08</h5>
+					<div class="work_title">
+						<h2>Why the trees are curved?</h2>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="work">
+			<a href="inner7.html">
+				<img src="img/work7.jpg" class="media" alt=""/>
+				<div class="caption"><h5>#07</h5>
+					<div class="work_title">
+						<h2>The Boundary Line</h2>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="work">
+			<a href="inner6.html">
+				<img src="img/work6.jpg" class="media" alt=""/>
+				<div class="caption"><h5>#06</h5>
+					<div class="work_title">
+						<h2>47°N 7°E: Floating Bodies and Revolutions of the Celestial Spheres</h2>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="work">
+			<a href="inner5.html">
+				<img src="img/work5.jpg" class="media" alt=""/>
+				<div class="caption"><h5>#05</h5>
+					<div class="work_title">
+						<h2>Kleine geschiedenis van de hoop met toeval en kruiden</h2>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="work">
+			<a href="inner4.html">
+				<img src="img/work4.jpg" class="media" alt=""/>
+				<div class="caption"><h5>#04</h5>
+					<div class="work_title">
+						<h2>Inclusion</h2>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="work">
+			<a href="inner3.html">
+				<img src="img/work3.jpg" class="media" alt=""/>
+				<div class="caption"><h5>#03</h5>
+					<div class="work_title">
+						<h2>Il faut se coiffer la mémoire?</h2>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="work">
+			<a href="inner2.html">
+				<img src="img/work2.jpg" class="media" alt=""/>
+				<div class="caption"><h5>#02</h5>
+					<div class="work_title">
+						<h2>And What of He Who Loosed His Arrow?</h2>
+					</div>
+				</div>
+			</a>
+		</div>
+		
+		<div class="work">
+			<a href="inner1.html">
+				<img src="img/work1.jpg" class="media" alt=""/>
+				<div class="caption"><h5>#01</h5>
+					<div class="work_title">
+						<h2>This Could Be Paradise : an ode to imagination</h2>
+					</div>
+				</div>
+			</a>
+		</div>
+		
+	</section><!-- end main -->
+	
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    
+    <!-- popup script -->
+    <script>
+        $(document).ready(function() {	
+
+        var id = '#dialog';
+
+        //Get the screen height and width
+        var maskHeight = $(document).height();
+        var maskWidth = $(window).width();
+
+        //Set heigth and width to mask to fill up the whole screen
+        $('#mask').css({'width':maskWidth,'height':maskHeight});
+
+        //transition effect
+        $('#mask').fadeIn(500);	
+        $('#mask').fadeTo("slow",0.9);	
+
+        //Get the window height and width
+        var winH = $(window).height();
+        var winW = $(window).width();
+
+        //Set the popup window to center
+        $(id).css('top',  winH/2-$(id).height()/2);
+        $(id).css('left', winW/2-$(id).width()/2);
+
+        //transition effect
+        $(id).fadeIn(2000); 	
+
+        //if close button is clicked
+        $('.window .close').click(function (e) {
+        //Cancel the link behavior
+        e.preventDefault();
+
+        $('#mask').hide();
+        $('.window').hide();
+        });
+
+        //if mask is clicked
+        $('#mask').click(function () {
+        $(this).hide();
+        $('.window').hide();
+        });
+
+        });
+    </script>
+    
+    
+</body>
+</html>
