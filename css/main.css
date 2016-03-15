@@ -393,6 +393,9 @@ h6 {
     background-position: 50% 50%;
 }
 
+.top.top11 {
+    background: url('../img/work11.jpg') no-repeat;
+}
 .top.top10 {
     background: url('../img/work10.jpg') no-repeat;
 }
@@ -477,12 +480,11 @@ h6 {
     display: block;
     width: 100%;
     color: #4b4848;
-    font-family: "raleway-bold", arial;
+    font-family: "raleway-semibold", arial;
     font-size: 26px;
     font-weight: bold;
     background: rgba(255, 255, 255, .7);
     padding: 20px;
-    text-transform: uppercase;
     line-height: 30px;
     margin: 0!important;
     overflow: hidden;
@@ -544,6 +546,16 @@ h6 {
     list-style: none;
 }
 
+.verwacht {
+	display: block;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 10%;
+	color:red; 
+	font-family: "raleway-regular", arial; 
+	content: "! VERWACHT ! ! VERWACHT ! ! VERWACHT !";
+}
 
 /*  Contact page map  */
 
