@@ -127,6 +127,7 @@
 
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/flowtype.js"></script>
     <script>
         $(".toggle").slideUp();
         $(".trigger").click(function () {
@@ -134,6 +135,15 @@
         });
         jQuery(".trigger:first").click(); // slide the first one open
     </script>
+	<script>
+		$('.content').flowtype({
+		   minimum   : 500,
+		   maximum   : 1200,
+		   minFont   : 13,
+		   maxFont   : 24,
+		   fontRatio : 60
+		});
+	</script>
 </body>
 
 </html>

@@ -52,18 +52,18 @@
                 <p><strong>Stone Soup</strong> is een platform voor hedendaagse kunst én een middel tot publieke dialoog. Het project is gesitueerd in de Dampoort wijk en voltrekt zich rondom <a href="#CF">een <span class="CFliker">lichtbak</span></a> aan een straatgevel die fungeert als openbare tentoonstellingsplek.</p>
                 <p>Binnen dit kader wordt om de zes maanden een andere kunstenaar uitgenodigd om een project-specifiek werk te creëren, telkens als 'antwoord' op het vorige. De komst van het nieuw beeld vieren we dan samen met buurtbewoners en sympathisanten onder de lichtbak mét een tas verse soep in de hand.</p>
                 <p>De lichtbak zelf brandt dagelijks van zonsondergang tot middernacht, vormt een baken in de straat en laat mensen op een laagdrempelige manier kennismaken met kunst.</p>
-                <div style="width:250px;float: left;">
+                <div class="col1-3"> 
                     <h3>Adres</h3>
                     <p>Bouwmeestersstraat 46
                         <br>9040 St-Amandsberg
                         <br>België
                         <br><a href="locatie.html">zie kaart</a></p>
                 </div>
-                <div style="width:250px; float:left;">
+                <div class="col2-3">
                     <h3>Contact</h3> &#118;&#122;&#119;&#064;&#098;&#111;&#117;&#116;&#105;&#113;&#117;&#101;&#118;&#105;&#122;&#105;&#113;&#117;&#101;&#046;&#099;&#111;&#109;
                     <br>±32 (0)477 56 97 23
                 </div>
-                <div style="width:250px; float:left;">
+                <div class="col3-3">
                     <h3>Boutique Vizique mailing</h3>
 
                     <!-- Begin MailChimp Signup Form -->
@@ -115,8 +115,6 @@
                 <!--End mailing div-->
                 <div style="clear:both;">
                     <p style="text-align:center;">&nbsp;</p>
-                    <br>
-                    <br>
                 </div>
 
                 <div>
@@ -148,12 +146,7 @@
                             <li>Filip Cojak</li>
                             <li>Filip Verhaege</li>
                             <li>Guy &amp; Magda Keuppens</li>
-                        </ul>
-                    </div>
-                    <!-- end left -->
-                    <div class="contributers">
-                        <ul>
-                            <li>Jelle Monstrey</li>
+							<li>Jelle Monstrey</li>
                             <li>Joeri Steegen</li>
                             <li>Johan en Lieve</li>
                             <li>Joost en Lieve</li>
@@ -168,12 +161,7 @@
                             <li>Madeleine Peyls </li>
                             <li>Marleen Nelen</li>
                             <li>Madame Peers</li>
-                        </ul>
-                    </div>
-                    <!-- end middle -->
-                    <div class="contributers">
-                        <ul>
-                            <li>Nathalie Snauwaert</li>
+							<li>Nathalie Snauwaert</li>
                             <li>Reginald Leper</li>
                             <li>Rosemie Callewaert</li>
                             <li>Rudy Pieters</li>
@@ -187,10 +175,13 @@
                             <li>Veerle Hageman</li>
                             <li>Veerle V. en Johan D.C.</li>
                             <li>Wim Piqueur</li>
-                            <li>en een aantal anoniempjes</li>
+                            <li>een aantal anoniempjes</li>
+							
                         </ul>
+						
                     </div>
                     <!-- end right -->
+					<p style="text-align:center;">Een dikke merci ook aan Matthias de Schepper van <a href="http://mdselektriciteit.be/">MDS</a> voor de hulp en het materiaal bij de demonteren van de oude en bekabelen van de nieuwe lichtbak.</p>   
                     
                     <div style="clear: both;"></div>
                     <div class="heart">♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥</div>
@@ -206,22 +197,32 @@
 
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/flowtype.js"></script>
     <script>
-    $(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
+		$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			  var target = $(this.hash);
+			  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			  if (target.length) {
+				$('html,body').animate({
+				  scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			  }
+			}
+		  });
+		});
     </script>
+	<script>
+		$('.content').flowtype({
+		   minimum   : 500,
+		   maximum   : 1200,
+		   minFont   : 13,
+		   maxFont   : 24,
+		   fontRatio : 60
+		});
+	</script>
 </body>
 
 </html>
