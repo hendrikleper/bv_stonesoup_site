@@ -413,6 +413,9 @@ h6 {
 	background-position: 50% 50%;
 }
 
+.top.top12 {
+	background: url('../img/work12.jpg') no-repeat;
+}
 .top.top11 {
 	background: url('../img/work11.jpg') no-repeat;
 }
@@ -751,7 +754,7 @@ h6 {
 	left: 0;
 	top: 0;
 	z-index: 9000;
-	background-color: rgba(0, 0, 0, 90);
+	background-color: rgba(0, 0, 0, 0.6);
 	display: none;
 }
 
@@ -759,19 +762,19 @@ h6 {
 	position: absolute;
 	left: 0;
 	top: 0;
-	width: 220px;
-	height: 200px;
+	width: 250px;
+	height: 250px;
 	display: none;
 	z-index: 9999;
-	padding: 20px;
+	padding: 12px;
 	border-radius: 10px;
 	text-align: center;
 }
 
 #boxes #dialog {
-	width: 220px;
-	height: 200px;
-	padding: 30px;
+	width: 250px;
+	height: 250px;
+	padding: 20px;
 	background-color: #ffffff;
 	font-family: 'raleway-regular', sans-serif;
 	font-size: 15pt;
